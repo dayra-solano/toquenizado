@@ -1,11 +1,16 @@
 import streamlit as st
 import requests
+import nltk 
+
 from bs4 import BeautifulSoup
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from collections import Counter
 import re
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 def get_text_from_url(url):
     try:
