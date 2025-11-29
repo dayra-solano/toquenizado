@@ -1,7 +1,6 @@
 import streamlit as st
 import requests
 import nltk 
-
 from bs4 import BeautifulSoup
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
